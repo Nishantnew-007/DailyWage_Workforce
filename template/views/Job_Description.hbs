@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Job Description</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/Style3.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.header h2 {
+    font-size: 1.8em;
+    color: #555;
+}
+
+.about-us, .job-overview, .responsibilities, .qualifications, .benefits, .apply {
+    margin-bottom: 20px;
+}
+
+h3 {
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 5px;
+    color: #333;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.apply-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #5cb85c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.apply-button:hover {
+    background: #4cae4c;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #eaeaea;
+}
+
+.socials a {
+    margin: 0 10px;
+    color: #555;
+    text-decoration: none;
+}
+
+.socials a:hover {
+    text-decoration: underline;
+}
+</style>
+
+</head>
+
+<body>
+   
+{{>navbar}}
+    <section>
+        <div class="MainBox">
+            <div class="container">
+        <header class="header">
+           
+            <h1>{{jobData.JobTitle}}</h1>
+            <h1>{{jobData.CreatedBy}}</h1>
+            <h2>Location: {{jobData.Locations}} </h2>
+                 <p>Type: Full-Time/Part-Time</p>
+        </header>
+
+        <section class="about-us">
+            <h3>About Us</h3>
+            <p>{{jobData.JobDescription}}</p>
+        </section>
+
+        <section class="job-overview">
+            <h3>Job Overview</h3>
+            <p>[Brief overview of the role]</p>
+        </section>
+
+        <section class="responsibilities">
+            <h3>Key Responsibilities</h3>
+            <ul>
+                <li>General Labor Tasks: Perform a variety of physical tasks such as lifting, carrying, and moving materials.</li>
+                <li>Site Preparation: Assist in preparing job sites by clearing debris, setting up tools, and ensuring a safe working environment.</li>
+                <li>Assisting Skilled Workers: Support carpenters, electricians, plumbers, or other tradespeople by providing assistance as needed.</li>
+                <li>Loading and Unloading: Safely load and unload materials from trucks and transport them to designated areas.</li>
+                <li>Physical Endurance: Performing physically demanding work as required</li>
+            </ul>
+        </section>
+
+        <section class="qualifications">
+            <h3>Qualifications</h3>
+            <ul>
+                <li>Education: {{jobData.RequiredSkills}}</li>
+                <li>Experience: 3 years</li>
+                <li>Skills: 
+                    <ul>
+                        <li>Manual Dexterity: The ability to handle tools and materials effectively.</li>
+                        <li>Attention to Detail: Ensuring tasks are done correctly and safely.</li>
+                        <li>Physical Fitness: Maintaining a level of physical fitness to handle strenuous work.</li>
+                        <li>Basic Communication: Ability to understand instructions and communicate with supervisors and peers.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="benefits">
+            <h3>Why Join Us?</h3>
+            <p>We offer a collaborative and inclusive work environment, competitive salary, health benefits, and opportunities for professional growth and development. Join us and make a difference!</p>
+        </section>
+
+        <section class="apply">
+            <h3>Last Date to Apply :{{jobData.LastDatetoApply}}</h3>
+            <h3>How to Apply</h3>
+            <p>Fill in the form to get the JOB!!!</p>
+            <a href="/ApplyForm?jobID={{jobData._id}}" class="apply-button">Apply Now</a>
+        </section>
+
+
+            <div class="container">
+                <h3>Frequently Asked Questions (FAQs):</h3>
+                <div class="faq">
+                    <h3>Q: What is the application deadline?</h3>
+                    <p>A: The application deadline is December 15th, 2023.</p>
+                </div>
+                <div class="faq">
+                    <h3>Q: Is this a remote position?</h3>
+                    <p>A: This position is primarily in-office, but remote work may be available on a case-by-case
+                        basis.</p>
+                </div>
+                <div class="faq">
+                    <h3>Q: What is the application deadline?</h3>
+                    <p>A: The application deadline is December 15th, 2023.</p>
+                </div>
+                <div class="faq">
+                    <h3>Q: Is this a remote position?</h3>
+                    <p>A: This position is primarily in-office, but remote work may be available on a case-by-case
+                        basis.</p>
+                </div>
+                <div class="faq">
+                    <h3>Q: Is this a remote position?</h3>
+                    <p>A: This position is primarily in-office, but remote work may be available on a case-by-case
+                        basis.</p>
+                </div>
+
+
+                <a href="mailto:hr@abctech.com" class="button">Apply Now</a>
+            </div>
+        </div>
+    </section>
+   {{>footer}}
+</body>
+
+</html>

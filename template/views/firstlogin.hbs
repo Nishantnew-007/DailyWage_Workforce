@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Please Login</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS -->
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.message h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.message p {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 1rem 0;
+}
+
+.login-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="message">
+            <h1>Please Login First</h1>
+            <p>You must log in to access this page. Please click the button below to go to the login page.</p>
+            <a href="LoginPage" class="login-button">Login</a>
+        </div>
+         <div>Don't have an account- 
+            <a href="/signup">Signup</a>
+        </div>
+    </div>
+</body>
+</html>

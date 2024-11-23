@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+                    }
+        .info{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    justify-content: space-between;
+}
+.icon{
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+    
+}
+.profilelogo{
+    margin-left: 290px;
+   padding: 28px;
+   
+    border-radius: 10px;
+}
+.supprtform{
+  margin-left: 50px;
+    padding-top: 15px;
+    width: 100%;
+    margin-right: 150px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+h1 , p {
+    color: rgb(41, 41, 216);
+    margin: 10px;
+    text-align: center;
+}
+label{
+    color: #525357;
+    font-weight: 600;
+   width: 200px;
+   margin-right: 10px;
+   margin-left: 10px;
+ font-size: 20px;
+}
+.inputfield{
+    margin-top: 15px;
+    
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.input{
+    width: 300px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    border-bottom: 1px solid black;
+    padding: 8px 10px;
+border-radius: 3px;
+transition: all 0.3s ease;
+}
+textarea{
+    margin-top: 20px;
+    resize: none;
+}
+input:hover {
+   opacity: 0.8;
+}
+#contact-form{
+    border: 2px solid rgb(53, 100, 229);
+    border-radius: 8px;
+    display: inline-block;
+    margin-left: 550px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+}
+#contact-form label{
+    
+    font-size: 40px;
+    margin-top: 40px;
+    padding: 50px;
+    margin-left: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+#contact-form  input{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    width: 360px;
+    align-items: center;
+    height: 25px;
+    padding: 10px;
+
+   
+}
+#submit{
+    padding: 12px;
+    cursor: pointer;
+    margin: 145px;
+    margin-top: 0;
+    color: antiquewhite;
+    background-color: rgb(56, 56, 224);
+    outline: none;
+    border: none;
+    border-radius: 3px;
+   }
+
+   .container {
+    margin-top: 0;
+	max-width: 1000px;
+	margin-right:auto;
+	margin-left:auto;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	min-height:500px;
+}
+.table {
+	width:100%;
+	border:1px solid  #EEEEEE;
+}
+
+.table-header {
+	display:flex;
+	width:100%;
+	background:#000;
+	padding:(24px/2 * 1.5) 0;
+}
+
+.table-row {
+	display:flex;
+	width:100%;
+	padding:(24px/2 * 1.5) 0;
+	
+	&:nth-of-type(odd) {
+		background:#EEEEEE;
+	}
+}
+
+.table-data, .header__item {
+	flex: 1 1 20%;
+	text-align:center;
+}
+
+.header__item {
+	text-transform:uppercase;
+}
+
+.filter__link {
+	color:white;
+	text-decoration: none;
+	position:relative;
+	display:inline-block;
+	padding-left:24px;
+	padding-right:24px;
+	
+	&::after {
+		content:'';
+		position:absolute;
+		right:-(24px/2 * 1.5);
+		color:white;
+		font-size:24px/2;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	
+	&.desc::after {
+		content: '(desc)';
+	}
+
+	&.asc::after {
+		content: '(asc)';
+	}
+	
+}
+.header__item{
+    font-size: 25px;
+}
+.table-data{
+    font-size: 25px;
+}
+.issuehistory h1{
+    color: #000;
+}
+.hey{
+    color: #000;
+}
+#renew{
+    background-color: blue;
+    color: white;
+    font-weight: 500;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    margin: 8px;
+    cursor: pointer;
+}
+/* General Body and Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9fafb;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Job Section Styling */
+.jobs-section {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    margin-top: 40px;
+    color: #000;
+}
+
+.jobs-section h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.job-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.job-card {
+    color: #000;
+   
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.job-card h3 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.job-card h3:hover {
+    color: #007bff;
+}
+
+.job-description {
+    font-size: 1rem;
+    color: #7f8c8d;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    height: 80px;
+    
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.job-date {
+    font-size: 0.9rem;
+    color: #95a5a6;
+    margin-bottom: 20px;
+}
+
+.view-job-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+}
+
+.view-job-button:hover {
+    background-color: #0056b3;
+}
+
+.no-jobs-message {
+    font-size: 1.2rem;
+    color: #888;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .job-list {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .job-card {
+        padding: 20px;
+    }
+
+    .jobs-section h2 {
+        font-size: 1.6rem;
+    }
+}
+
+    </style>
+
+</head>
+
+<body>
+   
+       {{>navbar}}
+    
+   
+
+    <section>
+        <div>
+            <div class="main_body">
+                <div class="info">
+                    <div class="profilelogo">
+                        <img src="/img/user.png" alt="" class="icon">
+                        <h1><{{user.name}}></h1>
+                        <p>GAZIABAD</p>
+        
+                    </div>
+                        
+                    
+                    
+                        <form class="supprtform">
+                            <div class="inputfield">
+                                <label for="name" class="centre">Name :</label>
+                               <h1>{{user.name}}</h1> <br>
+                            </div>
+                           
+                            <div class="inputfield">
+                                <label for="dname">Role:</label>
+                                <h1>{{user.role}}</h1><br>
+                            </div>
+                           
+                          <!-- <div class="inputfield">
+                            <label for="course">COURSE :</label>
+                            <h1>{{users.course}}</h1><br>
+                          </div>
+                           
+                         
+                            <div class="inputfield">
+                                <label for="section">SECTION :</label>
+                                <h1>{{users.section}}</h1><br>
+                            </div> -->
+                            <div class="inputfield">
+                                <label for="section">AdharNumber</label>
+                                <h1>{{user.adharnumbeer}}</h1><br>
+                            </div>
+                            <div class="inputfield">
+                                <label for="section">Password</label>
+                                <h1>{{user.password}}</h1><br>
+                            </div>
+                           
+                            
+                            
+            
+                        </form>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+{{#if userRole}}
+    <section>
+        <div class="jobs-section">
+            <h2>Your Jobs</h2>
+            {{#if appliedJobs.length}}
+                <div class="job-list">
+                    {{#each appliedJobs}}
+                        <div class="job-card">
+                            <h3>{{this.JobTitle}}</h3>
+                            <p class="job-description">{{this.JobDescription}}</p>
+                            <p class="job-date">{{this.HourlyWage}}</p>
+                            <p class="job-date">{{this.LastDatetoApply}}</p>
+                        </div>
+                    {{/each}}
+                </div>
+            {{else}}
+                <p>No jobs created yet. Start by posting one!</p>
+            {{/if}}
+        </div>
+    </section>
+{{else}}
+
+    <section>
+        <div class="jobs-section">
+            <h2>Your Applied Jobs</h2>
+            {{#if appliedJobs.length}}
+                <div class="job-list">
+                    {{#each appliedJobs}}
+                        <div class="job-card">
+                            <h3>{{this.jobID.JobTitle}}</h3>
+                            <div class="job-description">{{this.jobID.JobDescription}}</div>
+                            <p class="job-date">{{this.jobID.HourlyWage}}</p>
+                            <p class="job-date">{{this.jobID.LastDatetoApply}}</p>
+                        </div>
+                    {{/each}}
+                </div>
+            {{else}}
+                <p class="no-jobs-message">You haven't applied to any jobs yet.</p>
+            {{/if}}
+        </div>
+    </section>
+{{/if}}
+
+
+    <section>
+      {{>footer}}
+    </section>
+    
+</body>
+
+</html>

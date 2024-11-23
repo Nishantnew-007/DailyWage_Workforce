@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Finder</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="/css/style.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    /* position: fixed; */
+    margin-top: -50px;
+    height: 7rem;
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    color: #fff;
+    padding: 1rem;
+    width: 100%;
+}
+
+.nav-links {
+    margin-right: 0.5em;
+    display: flex;
+    text-align: end;
+}
+
+.nav-links li a:hover{
+    color: blue;
+}
+.profile a img {
+    display: flex;
+    width: 40px;
+    height: 40px;
+
+}
+
+.profile a img :hover {
+    width: 100px;
+    height: 100px;
+}
+
+.logo h1 {
+    margin-left: 0.8em;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff8820;
+}
+
+.logo h2 {
+    color: black;
+    font-size: 0.8em;
+    margin-left: 16em;
+    font-family: cursive;
+}
+
+.nav-links {
+
+    display: flex;
+    justify-content: space-between;
+    /* width: 30%; */
+
+}
+
+.nav-links li {
+    margin-top: 2em;
+    list-style: none;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+:root {
+    --orange: #fd9940;
+    --darkorange: #dd7d25;
+    --platinum: #e5e5e5;
+    --black: #2b2d42;
+    --white: #fff;
+    --thumb: #edf2f4;
+}
+
+
+body {
+    font: 16px / 24px "Rubik", sans-serif;
+    color: var(--black);
+    background: var(--platinum);
+    margin: 50px 0px 0px 0px;
+}
+
+.container {
+    max-width: 1400px;
+    padding: 0 15px;
+    margin: 5em;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 1em;
+}
+
+
+
+.page-footer {
+    position: fixed;
+    right: 0;
+    bottom: 50px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    z-index: 1;
+}
+
+.page-footer a {
+    display: flex;
+    margin-left: 4px;
+}
+
+.locate iframe {
+    width: 100%;
+    height: 500px;
+    margin-top: 2rem;
+}
+
+footer {
+    
+    text-align: center;
+    /* padding: 1rem; */
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    /* margin: 0px 0px 0px -60px; */
+
+}
+
+.main_footer {
+    display: flex;
+    height: 20rem;
+}
+
+.mail_subscribe {
+    display: flex;
+    gap: 2em;
+    margin-left: 6em;
+    padding-top: 8em;
+
+}
+
+.mail_subscribe>input {
+    border: 3px solid #ff861c;
+    border-radius: 0.3em;
+    height: 2.5em;
+    width: 25em;
+}
+
+.mail_subscribe>button {
+    background-color: #ff820e;
+    border: 3px solid #ff810b;
+    border-radius: 0.2em;
+    color: white;
+    height: 2.5em;
+    width: 5rem;
+}
+
+.Links_of_fotter {
+    display: grid;
+    list-style: none;
+    row-gap: 0.3em;
+    column-gap: 5em;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 10em;
+    padding-top: 5em;
+    /* margin-bottom: 7em; */
+    text-align: start;
+}
+
+#copyright {
+    text-align: center;
+    /* padding-bottom: 1.5em; */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>Daily Wages Workforce</h1>
+            <h2>Work Today, Earn Today.</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            
+            <li><a href="/captainBot">Captain</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/AddJob">Addjob</a></li>
+             
+            <li><a href="/logout">Logout</a></li>
+      
+            <li><a href="/LoginPage">Login</a></li>
+        
+            <div class="profile">
+                <a href="/profile"><img src="/img/8847419.png"></a>
+            </div>
+          
+            
+          
+        </ul>
+    </nav>
+ 
+<div style="height: 10rem;">
+
+</div>
+    <footer>
+        <div class="main_footer">
+            <div class="mail_subscribe"><input type="email" placeholder="E-mail">
+                <button>Subscribe</button>
+            </div>
+            <ul class="Links_of_fotter">
+                <li><a href="#"></a> About </li>
+                <li><a href="#"></a> Special Offers </li>
+                <li><a href="#"></a> Location </li>
+                <li><a href="#"></a> Management </li>
+                <li><a href="#"></a> Photo Tour </li>
+                <li><a href="#"></a> Blogs </li>
+                <li><a href="#"></a> FAQ's </li>
+                <li><a href="#"></a> News</li>
+                <li><a href="#"></a> Shares </li>
+                <li><a href="#"></a> Work </li>
+                <li><a href="#"></a> Process </li>
+                <li><a href="#"></a> New's </li>
+                <li><a href="#"></a> Conditions </li>
+                <li><a href="#"></a>Contact </li>
+                <li><a href="#"></a> Privacy policy </li>
+                <li><a href="#"></a> Terms and conditions</li>
+                <li><a href="#"></a> Privacy policy </li>
+                <li><a href="#"></a>Cookie policy</li>
+            </ul>
+        </div>
+        <hr>
+        <p>&copy; 2023 Job Finder. All rights reserved.</p>
+    </footer>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</body>
+
+</html>

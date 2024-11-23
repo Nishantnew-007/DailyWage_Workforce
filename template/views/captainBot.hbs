@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captain</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .captain-full-box{
+            background-image: url(./Captain\ Bot\ Short\ Image.jpg);
+            background-repeat: no-repeat;
+            height: 800px;
+        }
+
+        .Captain-bot-box{
+            display: inline-block;
+            border: 2px solid rgb(255, 179, 2);
+            border-radius: 5px;
+            margin-top: 100px;
+            margin-left: 100px;
+            height: 433px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+    {{>navbar}}
+    
+    </section>
+    <section class="captain-full-box">
+        <section>
+            <div >
+                <div class="Captain-bot-box">
+                    <iframe width="500" height="650" allow="microphone;"
+                        src="https://console.dialogflow.com/api-client/demo/embedded/70606fb5-c58d-4ba2-b67f-a77dbf590491"></iframe>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section>
+        <div>
+            <div>
+              {{>footer}}
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
